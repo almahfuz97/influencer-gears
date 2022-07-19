@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #FFFFFF;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+
+nav {}
+
+.space-between-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.space-between-flex ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.space-between-flex ul li {
+    padding: 10px;
+
+}
+
+.space-between-flex ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: normal;
+}
+
+.space-between-flex ul li.a.fa-cart-arrow-down {
+    height: 36px;
+    width: 36px;
+}
+
+.space-between-flex ul li.a.fa-magnifying-glass {
+    height: 36px;
+    width: 36px;
+}
+
+/* ---------------------------
+first section 
+------------------------------*/
+.first-section {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.half-width {
+    width: 50%;
+}
+
+.camera-div {
+    padding: 5%;
+    background: url("../images/Circle\ design.svg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 2%;
+
+}
+
+.camera-div img {
+    width: 100%;
+
+}
+
+.column-flex {}
+
+.column-flex h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #3A3A3A;
+    line-height: 70px;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.column-flex p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3A3A3A;
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.column-flex a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 41px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+/* ----------------------
+second section, stolres name
+------------------------- */
+
+.second-third-section {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.logos-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 1px solid rgb(221, 217, 217);
+    border-bottom: 1px solid rgb(221, 217, 217);
+    padding: 3% 0;
+}
+
+
+/* ----------------------
+third section, popular collection
+------------------------- */
+article {
+    margin-bottom: 5%;
+}
+
+.popular-collections-h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 70px;
+    color: #3A3A3A;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.collection-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.collection-card {
+    padding: 5%;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+
+.collection-card img {
+    width: 100%;
+}
+
+.collection-card h2 {
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+
+}
+
+.collection-card p {
+    width: 100%;
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.review-icon {
+    width: 50%;
+    margin-top: 10px;
+}
+
+.fa-star {
+    width: 16px;
+    height: 16px;
+}
+
+.fa-star.starred {
+    color: #FB8200;
+
+
+}
+
+.fa-star.half-starred {
+    color: #c7c2c2;
+    margin-right: 10px;
+
+}
+
+.collection-card h3 {
+    width: 50%;
+    margin-top: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: #787885;
+}
