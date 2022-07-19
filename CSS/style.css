@@ -175,6 +175,7 @@ article {
 .collection-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .collection-card {
@@ -214,7 +215,7 @@ article {
 }
 
 .review-icon {
-    width: 50%;
+    width: 80%;
     margin-top: 10px;
 }
 
@@ -236,7 +237,7 @@ article {
 }
 
 .collection-card h3 {
-    width: 50%;
+    width: 80%;
     margin-top: 10px;
     font-family: 'Inter';
     font-style: normal;
@@ -244,4 +245,57 @@ article {
     font-size: 14px;
     line-height: 143%;
     color: #787885;
+}
+
+.see-more {
+    display: flex;
+    justify-content: end;
+    text-align: center;
+}
+
+.see-more a {
+    text-decoration: none;
+    color: #E02C6D;
+    font-weight: 700;
+}
+
+
+/* ------------------
+    featured section
+ ----------------*/
+
+.featured-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.gear-photo-div {
+    width: 50%;
+    margin-right: 10%;
+}
+
+.gear-photo-div img {
+    width: 100%;
+}
+
+.featured-products-info h2 {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.featured-products-info p {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+
+.join-now-anchor {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 24px;
+
 }
