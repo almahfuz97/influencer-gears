@@ -1,3 +1,6 @@
+@import url(footer.css);
+@import url(media-query-index.css);
+
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +10,8 @@
 body {
 
     background-color: #FFFFFF;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 h1,
@@ -20,7 +25,10 @@ p {
     font-family: 'Inter', sans-serif;
 }
 
-nav {}
+.bars {
+    font-size: 2em;
+    display: none;
+}
 
 .space-between-flex {
     display: flex;
@@ -53,14 +61,13 @@ nav {}
     font-style: normal;
 }
 
-.space-between-flex ul li.a.fa-cart-arrow-down {
-    height: 36px;
-    width: 36px;
+.fa-cart-arrow-down {
+
+    font-size: 1.5em;
 }
 
-.space-between-flex ul li.a.fa-magnifying-glass {
-    height: 36px;
-    width: 36px;
+.fa-magnifying-glass {
+    font-size: 1.5em;
 }
 
 /* ---------------------------
@@ -82,6 +89,7 @@ first section
 
 .half-width {
     width: 50%;
+    margin-right: 5%;
 }
 
 .camera-div {
@@ -98,10 +106,9 @@ first section
 
 }
 
-.column-flex {}
 
 .column-flex h1 {
-    font-size: 52px;
+    font-size: 3em;
     font-weight: 700;
     color: #3A3A3A;
     line-height: 70px;
@@ -110,14 +117,15 @@ first section
 }
 
 .column-flex p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    color: #3A3A3A;
-    font-style: normal;
     width: 100%;
     margin-bottom: 5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: #3A3A3A;
 }
 
 .column-flex a {
@@ -142,15 +150,22 @@ second section, stolres name
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .logos-div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     border-top: 1px solid rgb(221, 217, 217);
     border-bottom: 1px solid rgb(221, 217, 217);
+    gap: 1.2em;
     padding: 3% 0;
+}
+
+.logos-div div img {
+    width: 90%;
 }
 
 
@@ -175,7 +190,7 @@ article {
 .collection-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 1em;
 }
 
 .collection-card {
@@ -266,14 +281,13 @@ article {
 
 .featured-flex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
 }
 
 .gear-photo-div {
     width: 50%;
-    margin-right: 10%;
 }
 
 .gear-photo-div img {
@@ -297,5 +311,121 @@ article {
     background-color: #E02C6D;
     color: white;
     padding: 10px 24px;
+
+}
+
+
+
+
+/* ----------------------------------------------------- 
+    Start of Media Query
+   -----------------------------------------------------*/
+
+/* Mobile Devices */
+@media screen and (max-width:767.98px) {
+
+    .remove-items {
+        display: none;
+    }
+
+    .bars {
+        display: flex;
+    }
+
+    .space-between-flex h2 {
+        font-size: 1.1em;
+    }
+
+    .first-section {}
+
+    .center-flex {
+        flex-direction: column-reverse;
+    }
+
+
+
+    .column-flex {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .camera-div {
+        padding: 5%;
+        width: 75%;
+        display: flex;
+    }
+
+
+
+    .column-flex h1 {
+        font-size: 2em;
+        line-height: 50px;
+        width: 100%;
+    }
+
+    .column-flex p {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    .column-flex a {
+        font-size: 12px;
+        line-height: 22px;
+        padding: 5px 16px;
+
+    }
+
+    .logos-div {
+        flex-wrap: wrap;
+    }
+
+    .collection-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .second-third-section {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    .featured-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .featured-products-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+
+    .featured-products-info p {
+        text-overflow: ellipsis;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .featured-products-info h2 {
+        text-align: center;
+    }
+
+    .featured-products-info a {
+        text-align: center;
+    }
+
 
 }
